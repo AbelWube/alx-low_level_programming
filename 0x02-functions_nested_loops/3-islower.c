@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks for case
- * @ch: takes char
+ * @c: takes char
  *
  * Return: 0 and 1
  */
