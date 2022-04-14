@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * _isdigit - checkes upper or lower
- * Auth: Abel Wube
+ * _isupper - checkes upper or lower
  * @c: parameter
- * Returns: 1 and 0
+ * Auth: Abel Wube
+ * Return: 1 and 0
  */
 int _isupper(int c)
 {
@@ -13,4 +13,4 @@ int _isupper(int c)
 		return (1);
 	else
 		return (0);
-}	
+}
