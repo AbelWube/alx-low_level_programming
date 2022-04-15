@@ -1,11 +1,8 @@
-/*
- * File: 3-print_numbers.c
- * Auth: Abel
- */
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
- * print_numbers - Prints the numbers from 0-9.
+ * print_numbers - print the numbers from 0 to 9
+ * Description: You can only use _putchar twice
  */
 void print_numbers(void)
 {
