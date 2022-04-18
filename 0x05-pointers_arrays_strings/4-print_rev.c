@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * print_rev - returns length of string
+ * print_rev - reverses a print
  * @s: parameter
  * Auth: Abel Wube
  * Return: Always 0.
