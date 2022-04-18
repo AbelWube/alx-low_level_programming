@@ -6,15 +6,12 @@
  * Auth: Abel Wube
  * Return: Always 0.
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
-    char s[];
-    int i = 0;
-    
-    while(s[i] != '\0')
-    {
-        i++;
-    }
-    
-    return (i);
+	int length = 0;
+
+	while (*s++)
+		length++;
+
+	return (length);
 }
