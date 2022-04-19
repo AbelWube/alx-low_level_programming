@@ -1,19 +1,20 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <string.h>
 /**
- * print_rev - reverses a print
- * @s: parameter
+ * print_rev - reverses a sentence
+ * @s: parameter that takes the sentence
  * Auth: Abel Wube
  * Return: Always 0.
  */
 void print_rev(char *s)
 {
-	int len = 0, index;
+	int i;
 
-	while (s[index++])
-		len++;
-	for (index = len - 1; index >= 0; index--)
-		putchar(s[index]);
-	putchar('\n');
+	for (i = strlen(s) - 1; i >= 0; i--)
+		printf("%c", s[i]);
+	printf("\n");
+
+	return (0);
 }
+
