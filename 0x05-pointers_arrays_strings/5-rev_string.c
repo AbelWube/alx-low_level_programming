@@ -1,19 +1,25 @@
 #include <stdio.h>
 #include "main.h"
 #include <string.h>
+#include <stdlib.h>
 /**
  * rev_string - reverse a string
  * @s: parameter
  * Auth: Abel Wube
  * Return: Always 0.
  */
-
 void rev_string(char *s)
 {
-	int i;
+	int len = 0, index = 0;
+	char tmp;
 
-	for (i = strlen(s) - 1; i >= 0; i--)
-		printf("%c", s[i]);
-	printf("\n");
+	while (s[index++])
+		len++;
+
+	for (index = len - 1; index >= len / 2; index--)
+	{
+		tmp = s[index];
+		s[index] = s[len - index - 1];
+		s[len - index - 1] = tmp;
+	}
 }
-
