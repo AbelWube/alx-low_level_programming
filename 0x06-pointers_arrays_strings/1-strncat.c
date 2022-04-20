@@ -3,14 +3,14 @@
 #include "string.h"
 
 /**
- *_strcat - concatenates two strings
+ *_strncat - concatenates two strings
  *@dest: the first string
  *@src: the second string
  *@n: Truncation value
  *Auth: Abel Wube
  *Return: pointer to dest
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int l1, l2, i, n = 0;
 
