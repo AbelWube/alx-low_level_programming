@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <string.h>
 /**
- *_strcat - concatenates two strings
+ *_strncpy - concatenates two strings
  *@dest: the first string
  *@src: the second string
  *@n: Truncation value
@@ -11,8 +11,6 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char dest;
-	char src;
 	int l1, l2, i, n;
 
 	l1 = strlen(dest);
@@ -21,13 +19,9 @@ char *_strncpy(char *dest, char *src, int n)
 	for (i = 0; i <= l2; i++)
 	{
 		if (i == n)
-		{
 			break;
-		}
 		else
-		{
 			dest[i] = src[i];
-		}
 	}
 	return (dest);
 }
