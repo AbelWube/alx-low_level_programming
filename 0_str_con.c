@@ -1,28 +1,22 @@
 #include <stdio.h>
-#include "main.h"
-#include "string.h"
-
+#include <string.h>
 /**
  *_strcat - concatenates two strings
  *@dest: the first string
  *@src: the second string
- *@n: Truncation value
  *Auth: Abel Wube
  *Return: pointer to dest
  */
-char *_strcat(char *dest, char *src, int n)
+int main()
 {
-	int l1, l2, i, n = 0;
+	char dest[98] = "Hello ";
+	char src[] = "World!\n";
+	int l1, l2, i;
 
 	l1 = strlen(dest);
 	l2 = strlen(src);
 
 	for (i = 0; i <= l2; i++)
-	{
-		if (i == n)
-			break;
-		else
-			dest[l1 + i] = src[i];
-	}
-	return (dest);
+		dest[l1 + i] = src[i];
+	printf("%s", dest);
 }
