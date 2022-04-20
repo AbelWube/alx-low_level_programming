@@ -12,7 +12,7 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int l1, l2, i, n = 0;
+	int l1, l2, i, n;
 
 	l1 = strlen(dest);
 	l2 = strlen(src);
