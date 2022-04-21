@@ -8,21 +8,17 @@
  *@src: the second string
  *@n: Truncation value
  *Auth: Abel Wube
- *Return: pointer to dest
+ *Return: pointer to destination
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int l1, l2, i, n;
+	int index = 0, dest_len = 0;
 
-	l1 = strlen(dest);
-	l2 = strlen(src);
+	while (dest[index++])
+		dest_len++;
 
-	for (i = 0; i <= l2; i++)
-	{
-		if (i == n)
-			break;
-		else
-			dest[l1 + i] = src[i];
-	}
+	for (index = 0; src[index] && index < n; index++)
+		dest[dest_len++] = src[index];
+
 	return (dest);
 }
