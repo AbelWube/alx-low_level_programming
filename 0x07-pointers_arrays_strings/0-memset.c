@@ -2,12 +2,12 @@
 #include "main.h"
 #include <string.h>
 /**
- *_memset - fill memory with constant byte
+ *memset - fill memory with constant byte pointed to @s by @c.
  *@s: memory area
  *@c: the constant byte
  *@n: bytes of memory area
  *Auth: Abel Wube
- *Return: pointer to s
+ *Return: pointer to @s
  */
 void *_memset(void *s, int c, size_t n)
 {
